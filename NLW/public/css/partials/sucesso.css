@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+:root{
+    --color-background:#F0F0F7;
+    --color-primary-lighter:#9871F5;
+    --color-primary-light:#9871f5;
+    --color-primary:#8257E5;
+    --color-primary-dark:#774DD6;
+    --color-primary-darker:#6842C2;
+    --color-secundary:#04D361;
+    --color-secundary-dark:#04BF58;
+    --color-title-in-primary:#FFFFFF;
+    --color-text-in-primary:#D4C2FF;
+    --color-text-title:#32264D;
+    --color-text-complement:#9C9BA6;
+    --color-text-base:#646180;
+    --color-line-in-white:#E6E6F0;
+    --color-input-background:#F8F8FC;
+    --color-button-text:#FFFFFF;
+    --color-box-base:#FFFFFF;
+    --color-boc-footer:#FAFAFC;
+    --color-small-info:#C1BCCC;
+    /* tamanho da fonte padrao 16px = 100% = 1rem */
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+div.container{
+    background:url('/img/success-background.svg') var(--color-primary-darker);
+    background-size: 50rem;
+    background-origin: content-box;
+    max-width:768px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.cadastro{
+    color: white;
+}
+
+div.cadastro h1{
+    font-size: 2.6rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div.cadastro p{
+    font-size: 1rem;
+}
+
+div.cadastro .para{
+    text-align: center;
+}
+
+div.botao{
+    position: relative;
+    left: 35%;
+    top: 35px;
+}
+
+#barra-tempo{
+    max-width: 768px;
+    background-color: rgba(70, 69, 69, .6);
+    display: flex;
+    align-items: center;
+}
+
+#time{
+    background-color: var(--color-secundary);
+    width: 1%;
+    height: 5px;
+    color: white;
+    font-size: 8px;
+}
+
+.botao button{
+    background-color: var(--color-secundary);
+    padding: 20px;
+    color: var(--color-title-in-primary);
+    border: 0;
+    cursor: pointer;
+}
+
+span.icone-sucesso{
+    position: relative;
+    left: 35%;
+    top: 0;
+}
+
+@media (min-width: 770px){
+    div.container{
+      min-width: 100%;
+      min-height: 100%;
+    }
+
+    div.cadastro h1{
+    font-size: 4rem;
+    text-align: center;
+    }
+
+    div.cadastro p{
+     font-size: 1.5rem;
+    }
+
+    .botao button{
+        background-color: var(--color-secundary);
+        padding: 20px;
+        color: var(--color-title-in-primary);
+        border: 0;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+
+    #barra-tempo{
+       min-width: 100%;
+      
+    }
+
+    #time{
+        width: 1%;
+        min-height: 5px;
+     }
+
+
+}
